@@ -23,5 +23,6 @@ Set up the debug toolbar as per http://django-debug-toolbar.readthedocs.io/en/st
 # Django manage functions
 
 1. Start the integrated web server: `python manage.py runserver`
-1. Set up a sqllite database: `python3.6 -m venv django`
-1. Add an app: `python3.6 -m venv django`
+1. Set up a sqllite database: `python manage.py migrate`
+1. Add an app: `python manage.py startapp books`
+1. Update database model: `python manage.py makemigrations`
